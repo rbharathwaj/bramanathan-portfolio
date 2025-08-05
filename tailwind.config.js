@@ -12,6 +12,9 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },
