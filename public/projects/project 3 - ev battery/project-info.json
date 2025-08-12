@@ -1,0 +1,48 @@
+{
+  "id": 3,
+  "title": "Immersion Cooling of EV Batteries",
+  "company": "UIUC",
+  "role": "ME 598 - Electronics Cooling",
+  "type": "academic",
+  "description": "Conducted CFD simulations to compare dielectric fluid–based immersion cooling with conventional cold plate cooling in EV battery modules, evaluating thermal performance and potential efficiency gains.",
+  "detailedDescription": "In-depth technical coverage of battery chemistry analysis, thermal management systems, safety protocols, charging infrastructure, and system integration with vehicle architecture.",
+  "technologies": [
+    "SolidWorks",
+    "ANSYS Icepak",
+    "Thermal Analysis",
+    "Battery Management Systems"
+  ],
+  "skills": [
+    "Battery System Design",
+    "Thermal Management", 
+    "Safety Engineering",
+    "System Integration",
+    "Performance Optimization",
+    "Regulatory Compliance"
+  ],
+  "duration": "6 months",
+  "teamSize": "6 members",
+  "keyAchievements": [
+    "Achievement 1 with energy density improvement",
+    "Achievement 2 with safety enhancement",
+    "Achievement 3 with cost reduction percentage"
+  ],
+  "challenges": [
+    "Thermal runaway prevention and solution implemented",
+    "Space constraints and innovative packaging approach",
+    "Regulatory compliance and testing validation"
+  ],
+  "github": "https://github.com/your-username/project3",
+  "external": null,
+  "featured": true,
+  "images": [
+    "/projects/project 3 - ev battery/0.1.png",
+    "/projects/project 3 - ev battery/1.png",
+    "/projects/project 3 - ev battery/2.png",
+    "/projects/project 3 - ev battery/3.png",
+    "/projects/project 3 - ev battery/4.png",
+    "/projects/project 3 - ev battery/5.png",
+    "/projects/project 3 - ev battery/6.png"
+  ],
+  "order": 3
+}

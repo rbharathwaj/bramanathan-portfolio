@@ -1,0 +1,42 @@
+{
+  "id": 1,
+  "title": "Collapsible Storage Pallet",
+  "company": "Prenac Tools",
+  "role": "Mechanical Engineering Intern",
+  "type": "corporate",
+  "description": "Designed and fabricated a reusable, high-strength pallet with a collapsible frame to reduce storage space and improve inventory efficiency. Optimized the structure for durability and material reusability using GD&T and finite element analysis.",
+  "detailedDescription": "Extended description with more technical details, specific challenges overcome, methodologies used, and quantifiable results or outcomes.",
+  "technologies": [
+    "SolidWorks",
+    "ANSYS", 
+    "FEA",
+    "CAD"
+  ],
+  "skills": [
+    "Mechanical Design",
+    "Finite Element Analysis",
+    "Problem Solving",
+    "Technical Documentation",
+    "Project Management"
+  ],
+  "duration": "6 months",
+  "teamSize": "3 members",
+  "keyAchievements": [
+    "Achievement 1 with quantifiable result",
+    "Achievement 2 with impact measurement", 
+    "Achievement 3 with specific outcome"
+  ],
+  "challenges": [
+    "Challenge 1 and how you solved it",
+    "Challenge 2 and your innovative approach"
+  ],
+  "github": "https://github.com/your-username/project",
+  "external": "https://your-project-demo.com",
+  "featured": true,
+  "images": [
+    "/projects/project 1 - prenac tools/1.png",
+    "/projects/project 1 - prenac tools/2.png",
+    "/projects/project 1 - prenac tools/3.png"
+  ],
+  "order": 1
+}

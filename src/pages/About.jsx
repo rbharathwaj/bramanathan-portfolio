@@ -119,15 +119,14 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <div className="relative">
-              {/* Placeholder for image */}
+              {/* Profile Image */}
               <div className="relative group">
-                <div 
-                  className="w-full aspect-square bg-[#64ffda]/10 rounded border-2 border-[#64ffda] flex items-center justify-center transition-all duration-300 group-hover:border-[#64ffda]/50"
-                >
-                  <div className="text-center">
-                    <div className="text-4xl mb-2">⚙️</div>
-                    <p className="font-mono text-sm text-[#64ffda]">Engineering Focus</p>
-                  </div>
+                <div className="w-full aspect-square rounded border-2 border-[#64ffda] overflow-hidden transition-all duration-300 group-hover:border-[#64ffda]/50">
+                  <img
+                    src="/about.jpg"
+                    alt="Bharathwaj"
+                    className="w-full h-full object-cover transition-all duration-300 group-hover:scale-105"
+                  />
                 </div>
                 
                 {/* Hover overlay */}
@@ -153,7 +152,7 @@ const About = () => {
             <div className="bg-[#112240] p-6 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/40 transition-all duration-300">
               <h3 className="text-[#ccd6f6] text-xl font-semibold mb-3">Education</h3>
               <p className="text-sm">
-                <span className="text-[#64ffda]">MS Mechanical Engineering</span><br />
+                <span className="text-[#64ffda]">MEng Mechanical Engineering</span><br />
                 University of Illinois at Urbana-Champaign
               </p>
             </div>
@@ -161,7 +160,7 @@ const About = () => {
             <div className="bg-[#112240] p-6 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/40 transition-all duration-300">
               <h3 className="text-[#ccd6f6] text-xl font-semibold mb-3">Research Focus</h3>
               <p className="text-sm">
-                <span className="text-[#64ffda]">Additive Manufacturing</span><br />
+                <span className="text-[#64ffda]">Mechanical Design</span><br />
                 Lattice Design & Optimization
               </p>
             </div>

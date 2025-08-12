@@ -57,27 +57,39 @@ const ContactPage = () => {
 
         {/* Contact Methods */}
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          className="grid md:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           
-          {/* Email */}
+          {/* Personal Email */}
           <a
-            href="mailto:bharathwaj@example.com"
+            href="mailto:rbharathwaj2003@gmail.com"
             className="group bg-[#112240] p-8 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/60 transition-all duration-300 hover:-translate-y-2"
           >
             <div className="text-[#64ffda] text-3xl mb-4">✉️</div>
-            <h3 className="text-[#ccd6f6] text-xl font-semibold mb-2">Email</h3>
+            <h3 className="text-[#ccd6f6] text-xl font-semibold mb-2">Personal Email</h3>
             <p className="text-sm text-[#8892b0] group-hover:text-[#64ffda] transition-colors duration-300">
-              bharathwaj@illinois.edu
+              rbharathwaj2003@gmail.com
+            </p>
+          </a>
+
+          {/* College Email */}
+          <a
+            href="mailto:brama@illinois.edu"
+            className="group bg-[#112240] p-8 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/60 transition-all duration-300 hover:-translate-y-2"
+          >
+            <div className="text-[#64ffda] text-3xl mb-4">🎓</div>
+            <h3 className="text-[#ccd6f6] text-xl font-semibold mb-2">University Email</h3>
+            <p className="text-sm text-[#8892b0] group-hover:text-[#64ffda] transition-colors duration-300">
+              brama@illinois.edu
             </p>
           </a>
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://linkedin.com/in/rbharathwaj"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-[#112240] p-8 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/60 transition-all duration-300 hover:-translate-y-2"
@@ -89,19 +101,6 @@ const ContactPage = () => {
             </p>
           </a>
 
-          {/* Research Gate / ORCID */}
-          <a
-            href="https://researchgate.net/profile/your-profile"
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group bg-[#112240] p-8 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/60 transition-all duration-300 hover:-translate-y-2"
-          >
-            <div className="text-[#64ffda] text-3xl mb-4">🔬</div>
-            <h3 className="text-[#ccd6f6] text-xl font-semibold mb-2">Research</h3>
-            <p className="text-sm text-[#8892b0] group-hover:text-[#64ffda] transition-colors duration-300">
-              Academic collaboration
-            </p>
-          </a>
 
         </motion.div>
 
@@ -118,7 +117,7 @@ const ContactPage = () => {
           </p>
           
           <a
-            href="mailto:bharathwaj@illinois.edu"
+            href="mailto:rbharathwaj2003@gmail.com"
             className="inline-block px-8 py-4 border-2 border-[#64ffda] text-[#64ffda] bg-transparent rounded font-mono text-lg hover:bg-[#64ffda]/10 transition-all duration-300 hover:-translate-y-1"
           >
             Say Hello!
@@ -161,7 +160,7 @@ const ContactSection = () => {
           </p>
           
           <a
-            href="mailto:bharathwaj@illinois.edu"
+            href="mailto:rbharathwaj2003@gmail.com"
             className="inline-block px-7 py-4 border-2 border-[#64ffda] text-[#64ffda] bg-transparent rounded font-mono text-sm hover:bg-[#64ffda]/10 transition-all duration-300 hover:-translate-y-1"
           >
             Say Hello

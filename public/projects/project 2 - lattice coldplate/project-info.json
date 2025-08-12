@@ -1,0 +1,44 @@
+{
+  "id": 2,
+  "title": "Lattice Coldplate Design Project",
+  "company": "UIUC",
+  "role": "Graduate Research Assistant",
+  "type": "academic",
+  "description": "Developed and optimized a cold plate with integrated lattice structures to enhance thermal performance for multi-chip module cooling. Refined channel geometry, flow paths, and lattice parameters to improve heat transfer efficiency while reducing weight.",
+  "detailedDescription": "Extended technical description covering design methodology, thermal analysis, manufacturing considerations, testing procedures, and validation results.",
+  "technologies": [
+    "SolidWorks",
+    "nTopology", 
+    "Flow Simulation",
+    "Thermal Analysis",
+    "Additive Manufacturing"
+  ],
+  "skills": [
+    "Thermal Management",
+    "CFD Analysis",
+    "Lattice Design",
+    "Manufacturing Planning",
+    "Performance Testing"
+  ],
+  "duration": "4 months",
+  "teamSize": "2 members",
+  "keyAchievements": [
+    "Achievement 1 with performance metrics",
+    "Achievement 2 with efficiency improvements",
+    "Achievement 3 with design innovation"
+  ],
+  "challenges": [
+    "Thermal distribution challenge and solution",
+    "Manufacturing constraint and workaround"
+  ],
+  "github": "https://github.com/your-username/project2",
+  "external": "https://your-project-demo2.com",
+  "featured": true,
+  "images": [
+    "/projects/project 2 - lattice coldplate/1.png",
+    "/projects/project 2 - lattice coldplate/2.png",
+    "/projects/project 2 - lattice coldplate/3.png",
+    "/projects/project 2 - lattice coldplate/4.png"
+  ],
+  "order": 2
+}
