@@ -77,9 +77,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            Mechanical Engineering grad student at UIUC specializing in product design, 
-            FEA simulation, and advanced manufacturing. Currently focused on implicit lattice design, 
-            additive manufacturing, and hydrogen storage solutions.
+            My interests lie in combining simulation, optimization, and emerging ML methods to improve how we design manufacturable mechanical systems.
           </motion.p>
         </motion.div>
       </div>

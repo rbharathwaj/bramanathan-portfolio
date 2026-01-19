@@ -65,25 +65,36 @@ const About = () => {
           >
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                Hello! I'm Bharathwaj, a passionate Mechanical Engineering graduate student at the 
-                <span className="text-[#64ffda]"> University of Illinois at Urbana-Champaign</span>. 
-                My journey in engineering began with a fascination for how things work and evolved 
-                into a deep passion for creating innovative solutions to complex problems.
+                Hello! I'm Bharathwaj, a Mechanical Engineering graduate with a strong interest in how
+                <span className="text-[#64ffda]"> thoughtful design</span>,
+                <span className="text-[#64ffda]"> simulation</span>, and
+                <span className="text-[#64ffda]"> computation</span> come together to solve real
+                engineering problems. My journey began with a curiosity about how things work and has
+                grown into a drive to design and analyze systems with both rigor and creativity.
               </p>
 
               <p>
-                I specialize in <span className="text-[#64ffda]">product design</span>, 
-                <span className="text-[#64ffda]"> finite element analysis (FEA)</span>, and 
-                <span className="text-[#64ffda]"> advanced manufacturing</span>. My current research 
-                focuses on cutting-edge areas including implicit lattice design, additive manufacturing 
-                optimization, and hydrogen storage solutions.
+                My background is rooted in <span className="text-[#64ffda]">product design</span>,
+                <span className="text-[#64ffda]"> finite element analysis (FEA)</span>, and
+                <span className="text-[#64ffda]"> advanced manufacturing</span>. I enjoy working at
+                the intersection of CAD, simulation, and manufacturability, with hands-on experience
+                exploring implicit lattice structures, additive manufacturing, and simulation-driven
+                design workflows.
               </p>
 
               <p>
-                When I'm not diving deep into simulations or designing the next breakthrough product, 
-                you can find me exploring the intersection of traditional engineering principles with 
-                modern computational methods. I believe in building solutions that are not only 
-                technically sound but also sustainable and impactful.
+                Lately, I've been especially interested in learning how
+                <span className="text-[#64ffda]"> data-driven</span> and
+                <span className="text-[#64ffda]"> machine-learning-based methods</span> can augment
+                traditional mechanical engineering tools. I'm actively exploring how optimization,
+                surrogate models, and computational techniques can accelerate design iteration while
+                staying grounded in physics and engineering fundamentals.
+              </p>
+
+              <p>
+                Beyond equations and meshes, I care deeply about building solutions that are practical,
+                scalable, and well-reasoned. I enjoy the process of learning through projects, testing
+                ideas, finding what breaks, and refining designs until they work better than before.
               </p>
 
               <p className="text-[#64ffda] font-mono">
@@ -166,10 +177,10 @@ const About = () => {
             </div>
 
             <div className="bg-[#112240] p-6 rounded border border-[#64ffda]/20 hover:border-[#64ffda]/40 transition-all duration-300">
-              <h3 className="text-[#ccd6f6] text-xl font-semibold mb-3">Innovation</h3>
+              <h3 className="text-[#ccd6f6] text-xl font-semibold mb-3">Current Interests</h3>
               <p className="text-sm">
-                <span className="text-[#64ffda]">Hydrogen Storage</span><br />
-                Sustainable Engineering Solutions
+                <span className="text-[#64ffda]">Data-Driven Design</span><br />
+                Simulation-Driven Workflows
               </p>
             </div>
 
