@@ -187,7 +187,6 @@ const Projects = () => {
               {/* Project Info */}
               <div className={`lg:col-span-5 ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                 <div>
-                  <p className="text-[#64ffda] font-mono text-sm mb-2">Featured Project</p>
                   <h3 className="text-[#ccd6f6] text-2xl lg:text-3xl font-bold mb-2">{project.title}</h3>
                   <div className="mb-4">
                     <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-mono ${
