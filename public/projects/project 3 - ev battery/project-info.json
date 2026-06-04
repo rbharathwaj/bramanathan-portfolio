@@ -1,48 +1,37 @@
 {
   "id": 3,
-  "title": "Immersion Cooling of EV Batteries",
+  "slug": "ev-battery-immersion-cooling",
+  "title": "Thermal Hydraulic Optimization of an Immersion Cooled Battery Module",
   "company": "UIUC",
-  "role": "ME 598 - Electronics Cooling",
+  "role": "ME 598: Electronics Cooling — Graduate Course Project",
   "type": "academic",
-  "description": "Conducted CFD simulations to compare dielectric fluid–based immersion cooling with conventional cold plate cooling in EV battery modules, evaluating thermal performance and potential efficiency gains.",
-  "detailedDescription": "In-depth technical coverage of battery chemistry analysis, thermal management systems, safety protocols, charging infrastructure, and system integration with vehicle architecture.",
-  "technologies": [
-    "SolidWorks",
-    "ANSYS Icepak",
-    "Thermal Analysis",
-    "Battery Management Systems"
+  "period": "Aug 2024 – Dec 2024",
+  "brief": "Redesigned a 9-cell cylindrical EV battery module for immersion cooling in ANSYS Icepak, achieving a 46% reduction in peak cell temperature and cutting thermal variation from 23.7 °C to 7.0 °C while also reducing system pressure drop.",
+  "overview": "Thermal management is one of the primary challenges limiting battery performance, safety, and lifespan in electric vehicles. Elevated cell temperatures accelerate degradation, while temperature nonuniformity leads to uneven aging, capacity imbalance, and reduced pack reliability. This project investigated immersion cooling as an alternative to conventional battery cooling strategies for a 9 cell cylindrical battery module.\n\nThe objective was not only to reduce peak cell temperature, but also to improve temperature uniformity across the module while minimizing hydraulic losses. Using CFD driven design iterations in ANSYS Icepak, multiple coolant candidates, flow configurations, and cell arrangements were evaluated to identify a thermally efficient and hydraulically practical cooling solution.",
+  "contributions": [
+    "Developed a detailed 3D battery module model in SolidWorks and implemented a thermal fluid simulation framework in ANSYS Icepak, including heat generation profiles, coolant properties, boundary conditions, and flow domains.",
+    "Evaluated six candidate coolants using a comparative thermal hydraulic assessment based on thermal conductivity, viscosity, pressure drop, and temperature uniformity characteristics.",
+    "Selected an ethylene glycol water mixture (EG 50 50) through a systematic tradeoff analysis balancing thermal performance and pumping requirements.",
+    "Redesigned coolant flow paths and battery cell arrangement to improve coolant distribution throughout the module, targeting simultaneous reduction of peak temperature and inter cell thermal gradients.",
+    "Validated the redesigned configuration through CFD simulations, quantifying the impact of geometric modifications on thermal performance, flow behavior, and hydraulic resistance."
   ],
-  "skills": [
-    "Battery System Design",
-    "Thermal Management", 
-    "Safety Engineering",
-    "System Integration",
-    "Performance Optimization",
-    "Regulatory Compliance"
-  ],
-  "duration": "6 months",
-  "teamSize": "6 members",
-  "keyAchievements": [
-    "Achievement 1 with energy density improvement",
-    "Achievement 2 with safety enhancement",
-    "Achievement 3 with cost reduction percentage"
+  "outcomes": [
+    "Achieved a 46 percent reduction in peak cell temperature compared with the baseline configuration.",
+    "Reduced temperature variation across the battery module from 23.7 °C to 7.0 °C, representing approximately 70 percent improvement in thermal uniformity.",
+    "Reduced system pressure drop while simultaneously improving cooling effectiveness, demonstrating an improved thermal hydraulic balance rather than a single metric optimization.",
+    "Established a comparative performance framework for coolant selection and thermal management design evaluation in immersion cooled battery systems."
   ],
   "challenges": [
-    "Thermal runaway prevention and solution implemented",
-    "Space constraints and innovative packaging approach",
-    "Regulatory compliance and testing validation"
+    "Peak temperature reduction and temperature uniformity are often competing objectives. Flow configurations that effectively cool localized hot spots can create uneven coolant distribution and larger temperature gradients across the module. Achieving improvements in both metrics required iterative refinement of flow paths and cell placement.",
+    "Many cooling enhancements improve heat transfer at the expense of increased pumping power. Understanding which geometric changes contributed to thermal improvement versus hydraulic penalty was critical to developing a balanced design.",
+    "Comparing multiple coolant candidates required evaluating coupled thermal and flow effects rather than relying solely on thermal conductivity, since viscosity and flow resistance significantly influence overall cooling system performance."
   ],
-  "github": "https://github.com/your-username/project3",
-  "external": null,
+  "technologies": ["SolidWorks", "ANSYS Icepak", "Computational Fluid Dynamics", "Electronics Cooling", "Thermal Management Systems", "Battery Thermal Analysis", "Immersion Cooling", "EV Battery Systems"],
+  "links": {
+    "github": null,
+    "external": null,
+    "report": null
+  },
   "featured": true,
-  "images": [
-    "/projects/project 3 - ev battery/0.1.png",
-    "/projects/project 3 - ev battery/1.png",
-    "/projects/project 3 - ev battery/2.png",
-    "/projects/project 3 - ev battery/3.png",
-    "/projects/project 3 - ev battery/4.png",
-    "/projects/project 3 - ev battery/5.png",
-    "/projects/project 3 - ev battery/6.png"
-  ],
   "order": 3
 }

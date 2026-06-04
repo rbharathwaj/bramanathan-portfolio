@@ -2,56 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Prevent white flash on page load */
+/* ── Light (blueprint) theme — default ── */
+:root {
+  --map-land:    #d1d5db;
+  --bg:           #edeae3;
+  --bg-card:      #f8f5ef;
+  --text-heading: #1e293b;
+  --text-body:    #475569;
+  --text-muted:   #64748b;
+  --accent:       #1d4ed8;
+  --border:       rgba(29, 78, 216, 0.15);
+  --border-hover: rgba(29, 78, 216, 0.40);
+  --grid-a:       rgba(29, 78, 216, 0.04);
+  --grid-b:       rgba(29, 78, 216, 0.02);
+  --grid-c:       rgba(29, 78, 216, 0.055);
+  --mouse-glow:   rgba(29, 78, 216, 0.07);
+  --cursor:       #1d4ed8;
+  --scrollbar:    #1d4ed8;
+  --scrollbar-track: #e2e8f0;
+  --toggle-track: rgba(29, 78, 216, 0.12);
+  --toggle-border: rgba(29, 78, 216, 0.25);
+  --toggle-knob:  #1d4ed8;
+}
+
+/* ── Dark (navy) theme ── */
+[data-theme="dark"] {
+  --map-land:    #1a2f47;
+  --bg:           #0a192f;
+  --bg-card:      #112240;
+  --text-heading: #ccd6f6;
+  --text-body:    #8892b0;
+  --text-muted:   #8892b0;
+  --accent:       #64ffda;
+  --border:       rgba(100, 255, 218, 0.20);
+  --border-hover: rgba(100, 255, 218, 0.45);
+  --grid-a:       rgba(100, 255, 218, 0.04);
+  --grid-b:       rgba(100, 255, 218, 0.02);
+  --grid-c:       rgba(100, 255, 218, 0.055);
+  --mouse-glow:   rgba(29, 78, 216, 0.15);
+  --cursor:       #64ffda;
+  --scrollbar:    #64ffda;
+  --scrollbar-track: #0a192f;
+  --toggle-track: rgba(100, 255, 218, 0.12);
+  --toggle-border: rgba(100, 255, 218, 0.30);
+  --toggle-knob:  #64ffda;
+}
+
 html {
-  background-color: #0a192f !important;
+  background-color: var(--bg) !important;
+  transition: background-color 0.35s ease;
 }
 
 body {
-  background-color: #0a192f !important;
-  color: #8892b0;
+  background-color: var(--bg) !important;
+  color: var(--text-body);
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.35s ease, color 0.35s ease;
 }
 
 #root {
-  background-color: #0a192f !important;
+  background-color: var(--bg) !important;
   min-height: 100vh;
+  transition: background-color 0.35s ease;
 }
 
-/* Smooth transitions for all elements */
-* {
-  transition: background-color 0.3s ease;
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #0a192f;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #64ffda;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #64ffda;
-}
-
-/* Ensure no white background during route transitions */
-.page-transition-enter {
-  background-color: #0a192f !important;
-}
-
-.page-transition-exit {
-  background-color: #0a192f !important;
+@keyframes ping {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%       { transform: scale(1.5); opacity: 0.4; }
 }

@@ -1,38 +1,75 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 
-const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+const PHRASES = [
+  "I build engineered solutions.",
+  "I follow my curiosity.",
+];
+
+// ── Update these with your actual profile URLs ────────────────────────────────
+const SOCIALS = [
+  { Icon: Github,   href: 'https://github.com/rbharathwaj',             label: 'GitHub' },
+  { Icon: Linkedin, href: 'https://www.linkedin.com/in/rbharathwaj/', label: 'LinkedIn' },
+  { Icon: Mail,     href: 'mailto:rbharathwaj2003@gmail.com', label: 'Email' },
+];
+
+const useTypewriter = (phrases) => {
+  const [display, setDisplay] = useState('');
+  const state = useRef({ phraseIdx: 0, charIdx: 0, deleting: false });
 
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
+    let timer;
+
+    const tick = () => {
+      const { phraseIdx, charIdx, deleting } = state.current;
+      const current = phrases[phraseIdx];
+
+      if (!deleting) {
+        if (charIdx < current.length) {
+          state.current.charIdx = charIdx + 1;
+          setDisplay(current.slice(0, charIdx + 1));
+          timer = setTimeout(tick, 75);
+        } else {
+          // Finished typing — pause then delete
+          timer = setTimeout(() => {
+            state.current.deleting = true;
+            tick();
+          }, 2200);
+        }
+      } else {
+        if (charIdx > 0) {
+          state.current.charIdx = charIdx - 1;
+          setDisplay(current.slice(0, charIdx - 1));
+          timer = setTimeout(tick, 38);
+        } else {
+          // Finished deleting — move to next phrase
+          state.current.deleting = false;
+          state.current.phraseIdx = (phraseIdx + 1) % phrases.length;
+          timer = setTimeout(tick, 300);
+        }
+      }
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+    timer = setTimeout(tick, 600);
+    return () => clearTimeout(timer);
+  }, []); // runs once — state lives in ref
+
+  return display;
+};
+
+const Hero = () => {
+  const typedText = useTypewriter(PHRASES);
 
   return (
     <div
       className="relative h-screen w-full overflow-hidden flex items-center"
-      style={{
-        backgroundColor: '#0a192f', // Dark navy blue (same as your screenshot)
-        color: '#8892b0',
-      }}
+      style={{ backgroundColor: 'var(--bg)', color: 'var(--text-body)' }}
     >
-      {/* Mouse Follow Gradient Effect */}
-      <div
-        className="absolute inset-0 pointer-events-none transition-opacity duration-300"
-        style={{
-          background: `radial-gradient(450px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
-        }}
-      />
+      {/* Grid background */}
 
-      {/* Main content - centered */}
+
+      {/* Main content */}
       <div className="max-w-6xl mx-auto px-6 sm:px-12 lg:px-20 w-full relative z-10">
         <motion.div
           className="text-center max-w-4xl mx-auto"
@@ -40,9 +77,9 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          {/* Small intro text */}
-          <motion.p 
-            className="text-[#64ffda] font-mono text-base sm:text-lg mb-5"
+          <motion.p
+            className="font-mono text-base sm:text-lg mb-5"
+            style={{ color: 'var(--accent)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -50,9 +87,9 @@ const Hero = () => {
             Hi, my name is
           </motion.p>
 
-          {/* Main heading */}
-          <motion.h1 
-            className="text-[#ccd6f6] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight"
+          <motion.h1
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight"
+            style={{ color: 'var(--text-heading)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -60,74 +97,75 @@ const Hero = () => {
             Bharathwaj Ramanathan
           </motion.h1>
 
-          {/* Secondary heading */}
-          <motion.h2 
-            className="text-[#8892b0] font-mono text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 leading-tight"
+          <motion.h2
+            className="font-mono text-2xl sm:text-3xl md:text-4xl font-semibold mb-8 leading-tight"
+            style={{ color: 'var(--text-body)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            I build engineered solutions.
+            <span>{typedText}</span>
+            <span
+              className="inline-block w-0.5 h-8 ml-1 align-middle"
+              style={{ backgroundColor: 'var(--cursor)', animation: 'blink 1s step-end infinite' }}
+            />
           </motion.h2>
 
-          {/* Description paragraph */}
-          <motion.p 
-            className="text-[#8892b0] text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed font-light"
+          <motion.p
+            className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-light mb-10"
+            style={{ color: 'var(--text-muted)' }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            My interests lie in combining simulation, optimization, and emerging ML methods to improve how we design manufacturable mechanical systems.
+            Curious by nature, engineer by training, and always eager to learn something new.
+          </motion.p>
+
+          {/* Social icons */}
+          <motion.div
+            className="flex items-center justify-center gap-5"
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.65 }}
+          >
+            {SOCIALS.map(({ Icon, href, label }) => (
+              <a
+                key={label}
+                href={href}
+                target={label !== 'Email' ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                aria-label={label}
+                style={{
+                  color: 'var(--text-muted)',
+                  transition: 'color 0.2s, transform 0.2s',
+                  display: 'flex',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.color = 'var(--accent)';
+                  e.currentTarget.style.transform = 'translateY(-3px)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.color = 'var(--text-muted)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                }}
+              >
+                <Icon size={22} strokeWidth={1.6} />
+              </a>
+            ))}
+          </motion.div>
+
+          <motion.p
+            className="font-mono text-base mt-5 flex items-center justify-center gap-1.5"
+            style={{ color: 'var(--text-muted)' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            <MapPin size={14} strokeWidth={1.8} style={{ color: 'var(--accent)', opacity: 0.8, flexShrink: 0 }} />
+            Champaign, IL
           </motion.p>
         </motion.div>
       </div>
-
-      {/* Primary Grid Pattern - Main teal grid */}
-      <div 
-        className="absolute inset-0 opacity-15"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(100, 255, 218, 0.15) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(100, 255, 218, 0.15) 1px, transparent 1px)
-          `,
-          backgroundSize: '60px 60px',
-        }}
-      />
-
-      {/* Secondary Grid Pattern - Finer grid for detail */}
-      <div 
-        className="absolute inset-0 opacity-8"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(100, 255, 218, 0.06) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(100, 255, 218, 0.06) 1px, transparent 1px)
-          `,
-          backgroundSize: '20px 20px',
-        }}
-      />
-
-      {/* Accent Grid Pattern - Larger spaced lines for structure */}
-      <div 
-        className="absolute inset-0 opacity-25"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(100, 255, 218, 0.12) 2px, transparent 2px),
-            linear-gradient(90deg, rgba(100, 255, 218, 0.12) 2px, transparent 2px)
-          `,
-          backgroundSize: '120px 120px',
-        }}
-      />
-
-      {/* Subtle Diagonal Pattern for texture */}
-      <div 
-        className="absolute inset-0 opacity-3"
-        style={{
-          backgroundImage: `
-            linear-gradient(45deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      />
     </div>
   );
 };

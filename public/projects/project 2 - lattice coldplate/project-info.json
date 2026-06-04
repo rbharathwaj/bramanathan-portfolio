@@ -1,44 +1,38 @@
 {
   "id": 2,
-  "title": "Lattice Coldplate Design Project",
+  "slug": "lattice-coldplate-rbdo",
+  "title": "Reliability Based Optimization of Lattice Cold Plates",
   "company": "UIUC",
-  "role": "Graduate Research Assistant",
+  "role": "SE 598: Data Driven Design Methods — Graduate Course Project",
   "type": "academic",
-  "description": "Developed and optimized a cold plate with integrated lattice structures to enhance thermal performance for multi-chip module cooling. Refined channel geometry, flow paths, and lattice parameters to improve heat transfer efficiency while reducing weight.",
-  "detailedDescription": "Extended technical description covering design methodology, thermal analysis, manufacturing considerations, testing procedures, and validation results.",
-  "technologies": [
-    "SolidWorks",
-    "nTopology", 
-    "Flow Simulation",
-    "Thermal Analysis",
-    "Additive Manufacturing"
+  "period": "Aug 2025 – Dec 2025",
+  "brief": "Built Gaussian Process surrogate models in MATLAB from an existing CFD dataset of lattice cold plate configurations, then applied Reliability Based Design Optimization to identify designs that balance thermal performance and pressure drop under manufacturing and operating uncertainty — cutting design iteration time by 100+ hours.",
+  "overview": "High fidelity CFD simulations provide valuable insight into thermal and hydraulic performance but become computationally expensive when used within iterative design optimization workflows. Building on an existing CFD dataset generated from lattice cold plate research, this project developed a surrogate modeling and Reliability Based Design Optimization framework capable of exploring the design space without repeatedly solving computationally intensive CFD models.\n\nThe objective was not to create new cold plate geometries, but to transform CFD generated data into a predictive design tool that enables rapid optimization while accounting for uncertainty in manufacturing and operating conditions. The project demonstrates how data driven methods can augment traditional mechanical engineering workflows by significantly reducing computational cost while preserving design insight.",
+  "contributions": [
+    "Developed a structured dataset from CFD results spanning multiple lattice cold plate configurations, capturing relationships between geometric design variables, maximum temperature, and pressure drop.",
+    "Built Gaussian Process surrogate models in MATLAB to predict thermal and hydraulic performance metrics directly from design parameters, replacing expensive CFD evaluations with near instantaneous predictions.",
+    "Validated surrogate model accuracy against CFD results to ensure reliable prediction of maximum temperature and pressure drop throughout the design space.",
+    "Implemented a Reliability Based Design Optimization workflow to identify lattice configurations that maintain strong thermal performance while remaining robust to manufacturing tolerances and operating variability.",
+    "Analyzed the tradeoff between thermal performance and hydraulic resistance using surrogate assisted optimization, enabling rapid exploration of design alternatives that would otherwise require extensive CFD computation."
   ],
-  "skills": [
-    "Thermal Management",
-    "CFD Analysis",
-    "Lattice Design",
-    "Manufacturing Planning",
-    "Performance Testing"
-  ],
-  "duration": "4 months",
-  "teamSize": "2 members",
-  "keyAchievements": [
-    "Achievement 1 with performance metrics",
-    "Achievement 2 with efficiency improvements",
-    "Achievement 3 with design innovation"
+  "outcomes": [
+    "Developed validated Gaussian Process surrogate models capable of predicting thermal and hydraulic performance across the lattice cold plate design space.",
+    "Reduced design iteration time by more than 100 hours by eliminating the need for repeated CFD simulations during optimization studies.",
+    "Identified robust lattice cold plate configurations that balance temperature control and pressure drop while maintaining performance under uncertainty.",
+    "Demonstrated the integration of machine learning based surrogate modeling with mechanical design optimization workflows for thermal management applications.",
+    "Established a scalable framework that can be extended to larger design spaces and more computationally expensive engineering simulations."
   ],
   "challenges": [
-    "Thermal distribution challenge and solution",
-    "Manufacturing constraint and workaround"
+    "Surrogate model accuracy depended heavily on the quality and distribution of the CFD training data. Selecting appropriate sampling regions and ensuring sufficient design space coverage required careful evaluation to prevent extrapolation errors.",
+    "Thermal and hydraulic objectives were inherently competing metrics. Configurations that improved heat transfer often increased pressure losses, requiring a balanced optimization strategy rather than single objective improvement.",
+    "Reliability Based Design Optimization introduced uncertainty quantification into the workflow, requiring the optimization process to consider performance variability rather than nominal predictions alone."
   ],
-  "github": "https://github.com/your-username/project2",
-  "external": "https://your-project-demo2.com",
+  "technologies": ["MATLAB", "Gaussian Process Regression", "Reliability Based Design Optimization", "Design Optimization", "Surrogate Modeling", "Data Driven Engineering", "CFD Data Analysis", "Thermal Systems Engineering"],
+  "links": {
+    "github": null,
+    "external": null,
+    "report": null
+  },
   "featured": true,
-  "images": [
-    "/projects/project 2 - lattice coldplate/1.png",
-    "/projects/project 2 - lattice coldplate/2.png",
-    "/projects/project 2 - lattice coldplate/3.png",
-    "/projects/project 2 - lattice coldplate/4.png"
-  ],
   "order": 2
 }

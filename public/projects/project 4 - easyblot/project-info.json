@@ -1,0 +1,52 @@
+{
+  "id": 4,
+  "slug": "easyblot",
+  "title": "EasyBlot: Automated Western Blotting Instrument",
+  "company": "Yantra Systems",
+  "role": "Product Development — Mechanical, Electrical & Embedded Systems",
+  "type": "personal",
+  "period": "Jan 2026 – Present",
+  "brief": "Designed and built a full electromechanical lab automation instrument from scratch — integrating mechanical enclosure design, 6-pump peristaltic fluidics, a custom 2-layer PCB, and ESP32 firmware into a single functional prototype that reduces active operator involvement from several hours to minutes per run.",
+  "overview": "Western blot workflows in research laboratories continue to rely on manual reagent exchanges across blocking, washing, antibody incubation, and drain cycles, requiring repeated operator intervention throughout an experiment. Commercial automation platforms address this challenge but often cost tens of thousands of dollars, placing them beyond the reach of many academic and small biotechnology laboratories.\n\nEasyBlot was developed as an affordable laboratory automation platform designed specifically for research environments, automating reagent exchange operations while integrating seamlessly into existing western blot workflows. The project required the development of a complete electromechanical system encompassing fluid handling, mechanical design, electronics, embedded control, and user interface development. Rather than automating the entire western blot process, the system focuses on the most labor intensive portion of the workflow, reducing user involvement while maintaining compatibility with established laboratory practices.",
+  "contributions": [
+    "Designed the complete mechanical architecture in SolidWorks, including enclosure layout, pump mounting structures, tubing routing, reagent reservoirs, blot chamber interface, inlet and drain pathways, and assembly features optimized for manufacturability, serviceability, and compact integration.",
+    "Designed a custom 2 layer PCB in KiCad integrating six independently controlled MOSFET driven pump channels, flyback protection circuitry, regulated power distribution, grounding architecture, and ESP32 based control within a compact electronics package.",
+    "Developed embedded firmware on an ESP32 platform to execute automated reagent sequencing across six fluid channels, controlling blocking buffer, wash solution, primary antibody, secondary antibody, drain, and recovery operations.",
+    "Implemented browser based instrument control through Wi Fi and mDNS, enabling protocol configuration and execution from any device on the local network without dedicated software installation.",
+    "Developed calibration and timing logic to compensate for channel to channel variability in peristaltic pump performance and maintain consistent fluid delivery throughout multi hour experimental protocols.",
+    "Validated and refined the mechanical, fluidic, and control systems through iterative prototyping and testing, addressing leak prevention, flow consistency, electrical reliability, reagent delivery accuracy, and maintenance accessibility."
+  ],
+  "outcomes": [
+    "Delivered a functional laboratory automation instrument integrating mechanical, fluidic, electrical, and embedded control subsystems into a single platform.",
+    "Reduced active user involvement from approximately 4 to 6 hours per experiment to only a few minutes of setup by automating all timed reagent exchange operations.",
+    "Eliminated up to 18 manual reagent transitions during a typical western blot workflow, improving protocol consistency and reducing operator dependency.",
+    "Improved experiment repeatability through firmware controlled execution of incubation, wash, drain, and recovery sequences.",
+    "Established a hardware architecture suitable for low volume manufacturing through custom PCB integration, standardized fluid routing, and modular subsystem design."
+  ],
+  "challenges": [
+    "Peristaltic pump performance varied with tubing degradation, manufacturing tolerances, and fluid back pressure, requiring calibration procedures and firmware level compensation to maintain consistent volumetric delivery across all six channels.",
+    "Switching inductive motor loads generated transient voltage spikes capable of disrupting control electronics. Flyback suppression circuitry and robust PCB power architecture were implemented to ensure reliable switching and protect the ESP32 control system.",
+    "Integrating six pumps, tubing networks, reservoirs, control electronics, and a blot chamber interface within a compact enclosure required multiple design iterations to balance serviceability, flow path efficiency, structural rigidity, and assembly complexity.",
+    "Defining the appropriate level of automation required balancing user needs, system complexity, and cost. Limiting automation to reagent exchange operations significantly reduced instrument complexity while preserving compatibility with existing laboratory workflows."
+  ],
+  "insights": "EasyBlot demonstrated that successful product development depends on system integration rather than individual subsystem performance. Mechanical, fluidic, electrical, and software components could each function correctly in isolation, yet small interactions between subsystems often became the dominant source of failure during testing.\n\nThe project also highlighted the importance of designing for reliability instead of simply achieving functionality. Early prototypes successfully executed automated protocols, but repeated operation exposed challenges related to calibration drift, fluid delivery consistency, electrical robustness, and maintenance accessibility. Addressing these issues required iterative refinement of both hardware and firmware architecture.\n\nPerhaps the most important lesson was that engineering decisions are often product decisions. Restricting automation to the reagent exchange portion of the workflow reduced cost, simplified operation, improved reliability, and created a solution that better matched the needs of academic laboratories than a fully automated system.",
+  "technologies": [
+    "SolidWorks",
+    "KiCad",
+    "Custom PCB Design",
+    "ESP32",
+    "Embedded C++",
+    "Peristaltic Fluidics",
+    "MOSFET Power Electronics",
+    "mDNS Networking",
+    "Rapid Prototyping",
+    "FDM & SLA Additive Manufacturing"
+  ],
+  "links": {
+    "github": null,
+    "external": null,
+    "report": null
+  },
+  "featured": true,
+  "order": 4
+}

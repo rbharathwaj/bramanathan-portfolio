@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "company": "Vinjamuri Innovations",
+    "role": "Mechanical Engineering Intern — Pressure Vessel & Composite Structures",
+    "period": "Mar 2026 – Present",
+    "location": "New Rochelle, NY",
+    "type": "corporate",
+    "overview": "Supporting the development of ruggedized Type III composite overwrapped pressure vessel (COPV) systems for high-pressure hydrogen storage applications. Working across nonlinear structural analysis, composite laminate modeling, autofrettage simulation, and standards-based design verification for safety-critical pressure vessel architectures.",
+    "bullets": [
+      "Developed nonlinear finite element models of Type III COPVs to evaluate burst behavior, residual stress development, and structural performance under high-pressure loading conditions.",
+      "Performed composite laminate analysis and autofrettage simulations to support pressure vessel qualification and compliance with ISO 11119-2 requirements.",
+      "Contributed to structural verification activities through ANSYS Mechanical and ACP, validating composite load-sharing behavior and pressure vessel response against analytical and published reference data."
+    ],
+    "technologies": ["ANSYS 2025 R2", "ANSYS ACP", "Nonlinear FEA", "Composite Structures", "Composite Laminate Analysis", "ISO 11119-2", "Pressure Vessel Design"]
+  },
+  {
+    "id": 2,
+    "company": "Vinjamuri Innovations",
+    "role": "Mechanical Design Engineer Intern",
+    "period": "Jun 2025 – Aug 2025",
+    "location": "New Rochelle, NY",
+    "type": "corporate",
+    "overview": "Supported the structural development of a patented Type III composite hydrogen storage vessel by reconstructing simulation-ready CAD geometry and performing nonlinear structural analyses ahead of physical testing.",
+    "bullets": [
+      "Reconstructed a complete simulation-ready CAD assembly from engineering drawings, enabling downstream structural analysis of a safety-critical pressure vessel system.",
+      "Performed nonlinear FEA across operating pressure ranges to evaluate stress and deformation behavior, supporting design verification prior to prototype testing."
+    ],
+    "technologies": ["SolidWorks", "ANSYS Mechanical", "Nonlinear FEA", "Composite Structures", "Pressure Vessel Design"]
+  },
+  {
+    "id": 3,
+    "company": "University of Illinois Urbana-Champaign",
+    "role": "Graduate Research — Thermal & Mechanical Design",
+    "period": "Jan 2025 – Dec 2025",
+    "location": "Champaign, IL",
+    "type": "academic",
+    "overview": "Conducted research on lattice-enhanced cold plate architectures for electronics cooling applications, using computational fluid dynamics to evaluate thermal performance and hydraulic resistance across a broad geometric design space.",
+    "bullets": [
+      "Designed and generated BCC lattice cold plate architectures using nTopology and SolidWorks for advanced thermal management applications.",
+      "Performed CFD studies across 30 design variants to characterize thermal performance, flow behavior, and hydraulic resistance.",
+      "Established a validated thermal-hydraulic design space that identified key geometric parameters governing cooling effectiveness and pressure drop."
+    ],
+    "technologies": ["SolidWorks", "nTopology", "ANSYS Fluent", "CFD", "Thermal Management", "Electronics Cooling"]
+  },
+  {
+    "id": 4,
+    "company": "Prenac Tools",
+    "role": "Mechanical Engineering Intern — Capstone Project",
+    "period": "Dec 2023 – May 2024",
+    "location": "Coimbatore, India",
+    "type": "corporate",
+    "overview": "Led the design, analysis, fabrication, and validation of a collapsible industrial pallet intended to reduce warehouse storage requirements while maintaining industrial load capacity and long-term durability.",
+    "bullets": [
+      "Designed and optimized a collapsible steel pallet and validated structural performance through finite element analysis under a 1-ton design load.",
+      "Fabricated and assembled the prototype using sheet metal manufacturing and welding processes while applying GD&T principles to maintain dimensional accuracy.",
+      "Correlated physical load testing with simulation results to refine structural behavior, contributing to improved durability and reduced replacement costs."
+    ],
+    "technologies": ["SolidWorks", "ANSYS Mechanical", "FEA", "GD&T (ASME Y14.5)", "Sheet Metal Fabrication", "Welding"]
+  },
+  {
+    "id": 5,
+    "company": "Defence Research & Development Organisation - Centre for Airborne Systems",
+    "role": "Project Trainee — Structural Analysis",
+    "period": "May 2023 – Jun 2023",
+    "location": "Bengaluru, India",
+    "type": "corporate",
+    "overview": "Performed structural validation of an airborne avionics electronics rack and shock mount assembly for the Embraer ERJ-145, evaluating stress, deformation, and load transfer behavior under operational and emergency loading conditions.",
+    "bullets": [
+      "Verified structural integrity of an avionics electronics rack under shock and vibration loading across operational and emergency flight conditions.",
+      "Evaluated shock mount behavior and load transmission between the rack and mounting structure as part of a system-level structural validation effort."
+    ],
+    "technologies": ["ANSYS Mechanical", "Structural FEA", "Shock & Vibration Analysis", "Aerospace Structural Design"]
+  },
+  {
+    "id": 6,
+    "company": "University of Leeds",
+    "role": "Leeds International Summer School — Fluid Dynamics in Theory and Practice",
+    "period": "Jul 2023",
+    "location": "Leeds, United Kingdom",
+    "type": "academic",
+    "additional": true,
+    "overview": "Completed an intensive international program focused on fluid dynamics, hydraulic modeling, and real-world engineering applications of flow analysis.",
+    "bullets": [
+      "Modeled flood behavior in the Akaki region of Ethiopia using HEC-RAS and historical hydrological data to analyze flood propagation and risk.",
+      "Applied fluid mechanics principles to a practical flood modeling project, evaluating flow behavior and water level predictions under varying conditions.",
+      "Participated in lectures and demonstrations led by Prof. Mark Trigg and Prof. Bokhove, including the Wetropolis physical flood model used to visualize rainfall, runoff, and extreme flood events."
+    ],
+    "technologies": ["HEC-RAS", "Hydrology", "Flood Modeling", "Fluid Mechanics"]
+  }
+]

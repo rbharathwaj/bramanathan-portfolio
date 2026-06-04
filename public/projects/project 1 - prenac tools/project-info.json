@@ -1,42 +1,42 @@
 {
   "id": 1,
-  "title": "Collapsible Storage Pallet",
+  "slug": "collapsible-storage-pallet",
+  "title": "Collapsible Industrial Pallet",
   "company": "Prenac Tools",
-  "role": "Mechanical Engineering Intern",
+  "role": "Mechanical Engineering Intern — Capstone",
   "type": "corporate",
-  "description": "Designed and fabricated a reusable, high-strength pallet with a collapsible frame to reduce storage space and improve inventory efficiency. Optimized the structure for durability and material reusability using GD&T and finite element analysis.",
-  "detailedDescription": "Extended description with more technical details, specific challenges overcome, methodologies used, and quantifiable results or outcomes.",
-  "technologies": [
-    "SolidWorks",
-    "ANSYS", 
-    "FEA",
-    "CAD"
+  "period": "Dec 2023 – May 2024",
+  "brief": "Redesigned a collapsible industrial pallet in SolidWorks validated to a 1-ton load capacity via FEA, then fabricated and physically tested the prototype — using sim-vs-test discrepancies to drive design corrections and cut material replacement costs by 30%.",
+  "overview": "Warehouses often dedicate significant floor space to storing empty pallets when they are not actively being used. Prenac Tools sought a solution that would reduce storage requirements without compromising structural performance, durability, or manufacturability. The objective was to develop a collapsible steel pallet capable of supporting industrial loads while occupying substantially less space during storage and transportation.\n\nThis project encompassed the complete product development lifecycle, progressing from concept generation and engineering analysis through fabrication, physical validation, and iterative design refinement. The final solution combined structural performance, reusability, and manufacturability into a practical product capable of supporting a 1 ton payload while achieving approximately 40% reduction in storage volume through a hybrid scissor and hinge folding architecture.",
+  "contributions": [
+    "Identified warehouse storage inefficiencies associated with conventional pallets and developed a collapsible pallet architecture capable of reducing idle storage footprint while maintaining industrial load carrying capacity.",
+    "Designed and optimized the complete pallet assembly in SolidWorks, focusing on structural load paths, hinge mechanisms, foldability, material utilization, and sheet metal manufacturability.",
+    "Evaluated multiple collapse mechanisms and selected a hybrid scissor and hinge configuration that balanced structural integrity, usability, and storage volume reduction.",
+    "Performed structural finite element analysis in ANSYS Mechanical under a 1 ton loading condition to evaluate stress distribution, deformation behavior, and critical failure locations, using simulation results to drive multiple design iterations.",
+    "Led prototype fabrication including sheet metal cutting, welding, assembly, and dimensional verification using GD&T principles in accordance with ASME Y14.5 standards.",
+    "Executed physical load testing and correlated measured structural response against simulation predictions, identifying discrepancies and refining both the analytical model and mechanical design to better represent real world loading behavior.",
+    "Developed an iterative validation workflow combining CAD, simulation, fabrication, and experimental testing to ensure the final design satisfied both structural and operational requirements."
   ],
-  "skills": [
-    "Mechanical Design",
-    "Finite Element Analysis",
-    "Problem Solving",
-    "Technical Documentation",
-    "Project Management"
-  ],
-  "duration": "6 months",
-  "teamSize": "3 members",
-  "keyAchievements": [
-    "Achievement 1 with quantifiable result",
-    "Achievement 2 with impact measurement", 
-    "Achievement 3 with specific outcome"
+  "outcomes": [
+    "Delivered a fully functional collapsible pallet prototype validated through simulation and physical load testing, demonstrating the feasibility of a space saving alternative to conventional industrial pallets.",
+    "Validated structural integrity under a 1 ton design load through both finite element analysis and experimental load testing.",
+    "Achieved approximately 40% reduction in pallet storage volume through a hybrid collapsible architecture, enabling more efficient warehouse utilization and pallet storage when not in use.",
+    "Reduced material replacement costs by approximately 30% through improved durability, structural robustness, and extended service life.",
+    "Advanced the project from initial concept through CAD design, structural analysis, fabrication, load testing, and final prototype validation."
   ],
   "challenges": [
-    "Challenge 1 and how you solved it",
-    "Challenge 2 and your innovative approach"
+    "Physical load testing revealed localized deformation and load transfer behavior that differed from simulation predictions, particularly around hinge interfaces and connection regions. This required refinement of contact definitions, boundary conditions, and joint geometry to better capture real structural behavior.",
+    "Designing a folding mechanism capable of repeated deployment while maintaining structural rigidity under heavy loading required balancing competing objectives of mobility, strength, and long term durability.",
+    "Sheet metal manufacturing constraints including bend allowances, weld accessibility, fixture requirements, and fabrication tolerances introduced design limitations that required multiple iterations to maintain both manufacturability and structural performance.",
+    "Achieving meaningful space savings without compromising load capacity required careful optimization of member geometry, reinforcement placement, and hinge design throughout the development process."
   ],
-  "github": "https://github.com/your-username/project",
-  "external": "https://your-project-demo.com",
+  "insights": "Simulation accelerated the design process, but physical testing proved essential for validating real load transfer behavior. While initial FEA results provided confidence in the structural concept, prototype testing exposed localized deformation near hinge interfaces that required updates to both the analytical model and the design itself. The project reinforced the importance of correlating simulation with experimental validation and using test results to refine engineering assumptions.",
+  "technologies": ["SolidWorks", "ANSYS Mechanical", "Finite Element Analysis", "GD&T (ASME Y14.5)", "Sheet Metal Design", "Welding & Fabrication", "Prototype Development", "Structural Testing"],
+  "links": {
+    "github": null,
+    "external": null,
+    "report": null
+  },
   "featured": true,
-  "images": [
-    "/projects/project 1 - prenac tools/1.png",
-    "/projects/project 1 - prenac tools/2.png",
-    "/projects/project 1 - prenac tools/3.png"
-  ],
   "order": 1
 }
