@@ -76,6 +76,18 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
+/* Hide system cursor globally on pointer devices — replaced by CustomCursor */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+  /* Restore system pointer for interactive elements */
+  a, button, [role="button"], input, textarea, select, label,
+  a *, button *, [role="button"] * {
+    cursor: pointer !important;
+  }
+}
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }

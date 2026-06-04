@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Travel from "./pages/Travel";
 import TravelDetail from "./pages/TravelDetail";
 import Hobbies from "./pages/Hobbies";
+import CustomCursor from "./components/CustomCursor";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -56,6 +57,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <ThemeProvider>
+      <CustomCursor />
       <div style={{ backgroundColor: 'var(--bg)', minHeight: '100vh', position: 'relative' }}>
         <GridBg />
         <BrowserRouter>
